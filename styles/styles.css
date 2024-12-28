@@ -179,3 +179,13 @@ section {
     max-width: 620px;
     font-size: 20px;
 }
+
+/* content saya */
+#containerSaya {
+    background-color: var(--warna-sekunder);
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns:repeat(2, 1fr)
+}
+/* end of content saya */
