@@ -15,6 +15,7 @@
 html {
     scroll-behavior: smooth;
     overflow-x: hidden;
+    min-width: 100vh;
 }
 
 * {
@@ -123,59 +124,96 @@ body {
 
 /* end of navbar */
 
+/* content */
 section {
     padding: 5% 10%;
 }
 
-#containerBeranda {
+#containerContent {
     width: 100%;
-    height: 100vh;
+    height: 150vh;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    align-items: center;
+    grid-template-columns:repeat(2, 1fr)
 }
 
-#containerBeranda img{
+.imgContent img {
     grid-column: 1;
-    position: relative;
-    width: 70%;
-    height: auto;
-    margin-right: 20%;
-    border-top-right-radius: 50px;
-    border-top-left-radius: 50px;
-    border-bottom-right-radius: 50px;
-    border-bottom-left-radius: 50px;
+    width: 90%;
+    margin-top: 50px;
     animation: floatingImage 2s alternate infinite ease-in-out;
 }
 
 @keyframes floatingImage {
     from {
-        top: 0px;
+        margin-top: 50px;
     }
     to {
-        top: 60px;
+        margin-top: 100px;
     }
 }
 
-.textBeranda{
+.textContent{
     grid-column: 2;
-    margin-left: 0%;
+    background-color: var(--warna-sekunder);
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 50px;
 }
 
-.textBeranda h1{
+.textContent h1{
+    margin-top: 50px;
+    margin-bottom: 20px;
+    margin-left: 30px;
+    margin-right: 30px;
+    text-align: center;
     color: var(--warna-teks);
-    text-decoration: underline;
-    text-underline-offset: 15px;
-    text-decoration-thickness: 1.5px;
-    margin: 15px 0;
-    font-weight: 700;
-    font-size: 50px;
+    font-weight: 550;
+    font-size: 30px;
+    letter-spacing: 0.04cm;
 }
 
-.textBeranda p {
+.textContent h2{
+    margin-top: 50px;
+    margin-bottom: 20px;
+    margin-left: 30px;
+    margin-right: 30px;
+    text-align: center;
+    color: var(--warna-teks);
+    font-weight: 550;
+    font-size: 24px;
+    letter-spacing: 0.04cm;
+}
+
+.textContent p {
     color: var(--warna-hover);
     text-align: justify;
-    letter-spacing: 0.04cm;
-    max-width: 620px;
-    font-size: 20px;
+    margin-left: 30px;
+    margin-right: 30px;
+    font-size: 18px;
+    letter-spacing: 0.02cm;
 }
+
+.textContent ul {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 30px;
+    margin-right: 30px;
+    color: var(--warna-hover);
+    letter-spacing: 0.02cm;
+    text-align: justify;
+}
+
+.textContent ul li {
+    margin: 0px 0px 20px 20px;
+    color: var(--warna-hover);
+    list-style: circle;
+    letter-spacing: 0.02cm;
+}
+
+.textContent ul li span{
+    color: var(--warna-hover);
+    font-weight: 600;
+}
+
+/* end of content */
