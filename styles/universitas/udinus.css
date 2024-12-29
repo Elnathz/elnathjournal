@@ -142,6 +142,10 @@ section {
     width: 90%;
     margin-top: 50px;
     animation: floatingImage 2s alternate infinite ease-in-out;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 50px;
 }
 
 @keyframes floatingImage {
@@ -209,6 +213,7 @@ section {
     margin: 0px 0px 20px 20px;
     color: var(--warna-hover);
     list-style: circle;
+    font-size: 18px;
     letter-spacing: 0.02cm;
 }
 
