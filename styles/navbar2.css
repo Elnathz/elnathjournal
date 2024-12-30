@@ -1,3 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+:root {
+    --warna-primer : #213555; 
+    --warna-sekunder : #3E5879;
+    --warna-teks : #d4bba8;
+    --warna-hover : #F5EFE7;
+    --warna-hitam : #000000;
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+* {
+    font-family: "Montserrat", sans-serif;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    color: var(--warna-sekunder);
+}
+
+body {
+    background-color: var(--warna-primer);
+}
+
 /* Bagian Navbar */
 
 .containerNavbar {
@@ -19,7 +52,7 @@
 .logo span {
     font-weight: 730;
 
-    animation: colorChange 2s alternate infinite ease;
+    animation: colorChange 3s alternate infinite ease-in-out;
 }
 
 @keyframes colorChange {
@@ -61,6 +94,7 @@
 
 .menus {
     display: none;
+
 }
 
 .menus ul {
@@ -79,24 +113,26 @@
     transition: all 10s ease;
 }
 
-.containerNavbar ul li:hover .menus {
-    background-color: var(--warna-teks);
+.containerNavbar ul li .menus {  
+    opacity: 0; /* Mulai dengan transparan */  
+    visibility: hidden; /* Tidak terlihat */  
     display: block;
-    position: absolute;
-    left: 35px;
-    top: 60px;
-    border-bottom-right-radius: 25px;
-    border-bottom-left-radius: 25px;
-    animation: dropdown 0.6s alternate ease-in-out;
+    position: absolute;  
+    left: 35px;  
+    top: 60px;  
+    border-bottom-right-radius: 25px;  
+    border-bottom-left-radius: 25px;  
+    background-color: var(--warna-teks);
+
+    transition: opacity 0.6s ease-out, visibility 0.1s ease-out;
 }
 
-@keyframes dropdown{
-    from {
-        top: 45px;
-    }
-    to {
-        top: 60px;
-    }
+.containerNavbar ul li:hover .menus {
+    opacity: 1; /* Menjadi terlihat */  
+    visibility: visible; /* Menjadi terlihat */
+    background-color: var(--warna-teks);  
+
+    transition: opacity 0.6s ease-in, visibility 0.6s ease-in;
 }
 
 /* end of navbar */

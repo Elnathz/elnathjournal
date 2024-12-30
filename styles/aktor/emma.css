@@ -141,6 +141,7 @@ section {
     grid-column: 1;
     grid-row: 1;
     width: 90%;
+    margin-bottom: 100px;
 
     animation: floatingImage 2s alternate infinite ease-in-out;
 }
@@ -155,10 +156,10 @@ section {
 
 @keyframes floatingImage {
     from {
-        margin-top: 30px;
+        margin-top: 20px;
     }
     to {
-        margin-top: 60px;
+        margin-top: 50px;
     }
 }
 
@@ -198,7 +199,11 @@ section {
 
 .textContent span{
     color: var(--warna-hover);
-    font-weight: 650;
+    font-weight: 600;
+}
+
+.textContent i {
+    color: var(--warna-hover);
 }
 
 .textContent p {
@@ -308,6 +313,21 @@ section {
 .textContent2 span{
     color: var(--warna-hover);
     font-weight: 600;
+}
+
+.textContent2 ul li a{
+    color: var(--warna-hover);
+    text-decoration: underline;
+    letter-spacing: 0.02cm;
+
+    transition: all 0.4s ease-out;
+}
+
+.textContent2 ul li a:hover {
+    color: var(--warna-teks);
+    letter-spacing: 0.06cm;
+
+    transition: all 0.4s ease-in;
 }
 
 /* end of content*/

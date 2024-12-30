@@ -19,15 +19,15 @@
 .logo span {
     font-weight: 730;
 
-    animation: colorChange 2s alternate infinite ease;
+    animation: colorChange 3s alternate infinite ease-in-out;
 }
 
 @keyframes colorChange {
     from {
-        color: var(--warna-hitam);
+        color: var(--warna-teks);
     }
     to {
-        color: var(--warna-teks);
+        color: var(--warna-hitam);
     }
 }
 
@@ -79,24 +79,26 @@
     transition: all 10s ease;
 }
 
-.containerNavbar ul li:hover .menus {
-    background-color: var(--warna-hover);
+.containerNavbar ul li .menus {  
+    opacity: 0;   
+    visibility: hidden;   
     display: block;
-    position: absolute;
-    left: 35px;
+    position: absolute;  
+    left: 35px;  
     top: 60px;
-    border-bottom-right-radius: 25px;
-    border-bottom-left-radius: 25px;
-    animation: dropdown 0.6s alternate ease-in-out;
+    border-bottom-right-radius: 25px;  
+    border-bottom-left-radius: 25px;  
+    background-color: var(--warna-hover);
+
+    transition: opacity 0.6s ease-out, visibility 0.1s ease-out;
 }
 
-@keyframes dropdown{
-    from {
-        top: 45px;
-    }
-    to {
-        top: 60px;
-    }
+.containerNavbar ul li:hover .menus {
+    opacity: 1; /* Menjadi terlihat */  
+    visibility: visible; /* Menjadi terlihat */
+    background-color: var(--warna-hover);  
+
+    transition: opacity 0.6s ease-in, visibility 0.6s ease-in;
 }
 
 /* end of navbar */
