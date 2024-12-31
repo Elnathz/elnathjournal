@@ -33,15 +33,16 @@
 
 .berandaNavbar {
     cursor: pointer;
+    color: var(--warna-hitam);
 
-    transition: all 0.4s ease-out;
+    transition: all 0.2s ease-out;
 }
 
 .berandaNavbar:hover{
     color: var(--warna-sekunder);
-    font-weight: 750;
+    font-weight: 700;
 
-    transition: all 0.4s ease-in;
+    transition: all 0.2s ease-in;
 }
 
 .navbarPilihan{
@@ -71,16 +72,22 @@
     display: block;
 }
 
+.menus ul a {
+    color: var(--warna-hitam);
+    font-size: 20px;
+    transition: all 0.25s ease-out;
+}
+
 .menus ul a:hover {
     color: var(--warna-sekunder);
-    transition: all 0.4s ease;
+
+    transition: all 0.25s ease-in;
 }
 
 .menus ul li {
     width: 220px;
     left: 0px;
     padding: 15px;
-    transition: all 10s ease;
 }
 
 .containerNavbar ul li .menus {  
@@ -89,20 +96,20 @@
     display: block;
     position: absolute;  
     left: 35px;  
-    top: 60px;
+    top: 0px;
     border-bottom-right-radius: 25px;  
     border-bottom-left-radius: 25px;  
     background-color: var(--warna-hover);
 
-    transition: opacity 0.6s ease-out, visibility 0.1s ease-out;
+    transition: opacity 0.6s ease-out, visibility 0.27s ease-out, top 0.85s ease-in-out;
 }
 
 .containerNavbar ul li:hover .menus {
     opacity: 1; /* Menjadi terlihat */  
     visibility: visible; /* Menjadi terlihat */
-    background-color: var(--warna-hover);  
-
-    transition: opacity 0.6s ease-in, visibility 0.6s ease-in;
+    background-color: var(--warna-hover);
+    top: 60px;
+    transition: opacity 0.6s ease-in, visibility 0.4s ease-in , top 0.4s ease-in-out;
 }
 
 /* end of navbar */

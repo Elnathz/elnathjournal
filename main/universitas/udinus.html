@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="/styles/universitas/udinus.css"> 
     <link rel="stylesheet" type="text/css" href="/styles/navbar2.css"> 
+    <link rel="stylesheet" type="text/css" href="/styles/footer.css"> 
     <link rel="icon" href="/img/logo.png">
     <title>Jurnal Artikel Udinus</title>
 </head>
@@ -120,5 +121,48 @@
         </div>
     </section>
     <!-- end of content -->
+
+    <!-- footer -->
+    <footer id="containerFooter">
+        <div class="menuForm"> <!-- form -->
+            <form class="contantForm">
+            <h1>FORM BUKU TAMU</h1>
+            <p>Jika terdapat saran ataupun kritik, silahkan isi form di bawah ini!</p>
+                <div class="menusForm">
+                    <label for="namaForm">Nama Lengkap</label>
+                    <input type="text" name="namaForm" placeholder="Masukkan Nama Lengkap Anda" required>
+                </div>
+                <div class="menusForm">
+                    <label for="emailForm">Email</label>
+                    <input type="email" name="emailForm" placeholder="Masukkan Alamat Email Anda" required>
+                </div>
+                <div class="menusForm">
+                    <label for="mengetahuiForm">Mengetahui Web Ini Dari Mana?</label>
+                    <span>Instagram</span><input type="checkbox" name="sosialMedia" value="Instagram" id="checklist">
+                    <span>Facebook</span><input type="checkbox" name="sosialMedia" value="Facebook" id="checklist">
+                    <span>Tiktok</span><input type="checkbox" name="sosialMedia" value="Tiktok" id="checklist">
+                    <span>Discord</span><input type="checkbox" name="sosialMedia" value="Discord" id="checklist">
+                    <span>Twitter</span><input type="checkbox" name="sosialMedia" value="Twitter" id="checklist">
+                </div>
+                <div class="menusForm">
+                    <label for="pesanForm">Pesan Saran atau Kritik</label>
+                    <textarea name="pesanForm" placeholder="Pesan Anda" cols="20" rows="5"></textarea>
+                </div>
+                <button type="submit" name="submit" value="Mengirim Form">Kirimkan Form</button>
+                <button type="reset" name="reset" value="Mengulangi Pengisian">Reset Form</button>
+            </form>
+        </div>
+        <div class="menuSosial">
+            <h1>Ikuti Media Sosial Saya</h1>
+            <div class="menusSosial">
+                <a href="https://www.instagram.com/frrosrift_/" target="_blank"><img src="/img/iconInstagram.svg" alt="iconInstagram"></a>
+                <a href="https://www.facebook.com/profile.php?id=100012211689866" target="_blank"><img src="/img/iiconFacebook.svg" alt="iconFacebook"></a>
+                <a href="https://x.com/elnathaaz" target="_blank"><img src="/img/iconTwitter.svg" alt="iconTwitter"></a>
+                <a href="https://discord.gg/8MTFWAQHH5" target="_blank"><img src="/img/iconDiscord.svg" alt="iconDiscord"></a>
+            </div>
+        </div>
+    </footer>
+    <!-- end of footer -->
+
 </body>
 </html>

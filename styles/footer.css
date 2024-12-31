@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+:root {
+    --warna-primer : #213555; 
+    --warna-sekunder : #3E5879;
+    --warna-teks : #d4bba8;
+    --warna-hover : #F5EFE7;
+    --warna-hitam : #000000;
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+* {
+    font-family: "Montserrat", sans-serif;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    color: var(--warna-sekunder);
+}
+
+body {
+    background-color: var(--warna-primer);
+}
+
+/* footer */
+#containerFooter {
+    margin-top: 50px ;
+    background-color: var(--warna-sekunder);
+    height: auto;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border-top-left-radius: 200px;
+    gap: 2rem;
+}
+
+.menuForm {
+    grid-column: 1;
+    grid-row: 1;
+    max-width: 800x;
+    margin-top: 30px ;
+    margin-left: 50px;
+    margin-bottom: 30px;
+    background: #fff;
+    padding: 30px;
+    box-shadow: 0px 4px 8px rgb(0, 0, 0, 0.1);
+    border-radius: 15px;
+    border-top-left-radius: 200px;
+}
+
+.menuForm form{
+    margin-left: 15px;
+}
+.menuForm h1{
+    text-align: center;
+    margin-bottom: 5px;
+    color: var(--warna-teks);
+    animation: gerak 2s alternate infinite;
+}
+
+@keyframes gerak {
+    from {
+        letter-spacing: 0cm;
+    }
+    to {
+        letter-spacing: 0.2cm;
+    }
+}
+
+.menuForm p{
+    text-align: center;
+    margin-bottom: 10px;
+    color: var(--warna-hitam);
+}
+
+.menuForm .menusForm {
+    display: flex;
+    flex-direction: column;
+}
+
+.menuForm button{
+    margin-top: 5px;
+    padding: 7px;
+    font-size: 18px;
+    color: var(--warna-hitam);
+    background-color: #d1ccccf8;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+    transition: all 0.3s ease-out;
+}
+
+.menuForm button:hover {
+    background-color: var(--warna-teks);
+    color: var(--warna-hover);
+    letter-spacing: 0.02cm ;
+
+    transition: all 0.3s ease-in;
+}
+
+.menusForm span{
+    margin-top: 10px;
+    color: var(--warna-hitam);
+}
+
+.menusForm #checklist{
+    margin-top: -10px;
+}
+
+.menusForm label{
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.menusForm input, .menusForm textarea{
+    padding: 6px;
+    border: 0.5px solid var(--warna-hitam);
+    border-radius: 8px;
+    font-size: 16px;
+    color: #000000;
+
+    transition: all 0.3s ease-out;
+}
+
+.menusForm input:hover, .menusForm textarea:hover{
+    border: 1.5px solid var(--warna-sekunder);
+
+    transition: all 0.3s ease-in;
+}
+
+.menusForm input:focus, .menusForm textarea:focus{
+    color: var(--warna-sekunder);
+
+    transition: all 0.3s ease-in;
+}
+
+.menusForm textarea{
+    max-width: 800px;
+    max-height: 80px;
+}
+
+.menuSosial {
+    grid-column: 2;
+    grid-row: 1;
+    max-width: 850px;
+    height: 300px;
+    margin-top: 30px ;
+    margin-left: 50px;
+    margin-bottom: 30px;
+    background: #fff;
+    padding: 30px;
+    box-shadow: 0px 4px 8px rgb(0, 0, 0, 0.1);
+    border-radius: 30px;
+}
+
+.menuSosial h1{
+    color: var(--warna-teks);
+    text-align: center;
+    margin-bottom: 20px;
+
+    animation: gerak 2s alternate infinite;
+}
+
+.menusSosial img{
+    color: #000;
+    margin-top: 30px;
+    width: 50px;
+    position: relative;
+    display: inline-block;
+    left: 150px;
+    margin-left: 50px;
+
+    transition: all 0.3s ease-out;
+}
+
+.menusSosial img:hover{
+    width: 60px;
+    
+    transition: all 0.3s ease-in;
+}
