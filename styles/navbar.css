@@ -1,3 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+:root {
+    --warna-primer : #213555; 
+    --warna-sekunder : #3E5879;
+    --warna-teks : #d4bba8;
+    --warna-hover : #F5EFE7;
+    --warna-hitam : #000000;
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+* {
+    font-family: "Montserrat", sans-serif;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    color: var(--warna-sekunder);
+}
+
+body {
+    background-color: var(--warna-primer);
+}
+
 /* Bagian Navbar */
 
 .containerNavbar {
