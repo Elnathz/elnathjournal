@@ -46,6 +46,7 @@ section {
 
 #containerContent img {
     align-content: center;
+    position: static;
     grid-row: 1;
     width: 60%;
     margin-left: 20%;
