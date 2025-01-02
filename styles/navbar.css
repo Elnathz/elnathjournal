@@ -140,6 +140,7 @@ body {
 .containerNavbar ul li:hover .menus {
     opacity: 1; /* Menjadi terlihat */  
     visibility: visible; /* Menjadi terlihat */
+    z-index: 50;
     background-color: var(--warna-hover);
     top: 60px;
     transition: opacity 0.6s ease-in, visibility 0.4s ease-in , top 0.4s ease-in-out;
