@@ -125,6 +125,7 @@ body {
 
 .containerNavbar ul li .menus {  
     opacity: 0;   
+    z-index: 1000;
     visibility: hidden;   
     display: block;
     position: absolute;  
@@ -139,6 +140,7 @@ body {
 
 .containerNavbar ul li:hover .menus {
     opacity: 1; /* Menjadi terlihat */  
+    z-index: 1000;
     visibility: visible; /* Menjadi terlihat */
     z-index: 50;
     background-color: var(--warna-hover);
